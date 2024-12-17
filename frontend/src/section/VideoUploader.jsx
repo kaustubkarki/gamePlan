@@ -4,6 +4,7 @@ import Dropzone from "react-dropzone";
 import "dropzone/dist/dropzone.css"; // Import Dropzone CSS for styling
 import Button from "../components/Button";
 import { Element } from "react-scroll";
+import { API_URL } from "../api";
 
 const VideoUploader = () => {
   const [videoFile, setVideoFile] = useState(null);
@@ -28,13 +29,15 @@ const VideoUploader = () => {
 
     try {
       const uploadResponse = await axios.post(
-        "http://localhost:8000/upload-video/",
+        `${API_URL}/upload-video/`,
         formData,
         { headers: { "Content-Type": "multipart/form-data" } }
       );
-      setOutputVideo(uploadResponse.data.output_url);
+      setOutputVideo(`${API_URL}${uploadResponse.data.video_url}`);
+      console.log(uploadResponse.data);
     } catch (error) {
       console.error("Error uploading video", error);
+      alert("Failed to upload the video. Please try again.");
     }
   };
 
@@ -68,11 +71,18 @@ const VideoUploader = () => {
 
           {outputVideo && (
             <div className="mt-4">
-              <video controls className="max-w-full">
-                <source
-                  src={`http://localhost:8000${outputVideo}`}
-                  type="video/mp4"
-                />
+              <video
+                name="outputVideo"
+                width={855}
+                height={655}
+                className="rounded-xl"
+                autoPlay
+                muted
+                loop
+                controls
+              >
+                <source src={outputVideo} type="video/mp4" />
+                Your browser does not support the video tag.
               </video>
             </div>
           )}
