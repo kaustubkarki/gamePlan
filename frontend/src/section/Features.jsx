@@ -1,5 +1,5 @@
 import { Element } from "react-scroll";
-
+import { Link as LinkScroll } from "react-scroll";
 import { details, features } from "./../constants/index.jsx";
 import Button from "../components/Button.jsx";
 
@@ -31,7 +31,16 @@ const Features = () => {
                   {title}
                 </h2>
                 <p className="mb-11 body-1 max-md:mb-8 max-md:body-3">{text}</p>
-                <Button icon={button.icon}>{button.title}</Button>
+                <LinkScroll
+                  to={button.to}
+                  offset={-100}
+                  spy
+                  smooth
+                  activeClass="nav-active"
+                  className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5"
+                >
+                  <Button icon={button.icon}>{button.title}</Button>
+                </LinkScroll>
               </div>
             ))}
 

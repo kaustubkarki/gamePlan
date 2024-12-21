@@ -8,6 +8,7 @@ export const features = [
     button: {
       icon: "/images/magictouch.svg",
       title: "Watch the demo",
+      to: "demo",
     },
   },
   {
@@ -18,7 +19,8 @@ export const features = [
     text: "Our advanced machine learning models ensure highly accurate tracking and analysis of every football game. Whether it's a local match or a professional league, rely on our platform to provide the most precise insights every time.",
     button: {
       icon: "/images/docs.svg",
-      title: "Read the docs",
+      title: "Any Question?",
+      to: "faq",
     },
   },
 ];
@@ -27,17 +29,17 @@ export const details = [
   {
     id: "0",
     icon: "/images/detail-1.png",
-    title: "AI automated video editing",
+    title: "on Video analysis",
   },
   {
     id: "1",
     icon: "/images/detail-2.png",
-    title: "Collaborate with your team",
+    title: "shows team performance",
   },
   {
     id: "2",
     icon: "/images/detail-3.png",
-    title: "Performs like a charm",
+    title: "works on similar pages",
   },
   {
     id: "3",
@@ -51,13 +53,13 @@ export const faq = [
     id: "0",
     question: "How does the video analysis process work?",
     answer:
-      "Upload your football video, and our AI-powered system will process it to extract player movements, ball tracking, and key moments. You’ll receive a detailed breakdown of the game in just a few minutes.",
+      "Upload your football video, and our AI-powered system will process it to extract player movements, ball tracking. You’ll receive a detailed breakdown of the game in just a few minutes.",
   },
   {
     id: "1",
     question: "What types of videos are supported?",
     answer:
-      "We support most common formats such as MP4, AVI, and MOV. If your video is in a different format, you can easily convert it using free tools online.",
+      "We support most common format MP4. If your video is in a different format, you can easily convert it using free tools online.",
   },
   {
     id: "2",
@@ -69,25 +71,23 @@ export const faq = [
     id: "3",
     question: "Can I analyze videos of amateur matches?",
     answer:
-      "Yes, our system is designed to work with both professional and amateur matches, providing actionable insights for players, coaches, and analysts.",
+      "Yes, our system is designed to work with both professional and amateur matches, of similar camera view.",
   },
   {
     id: "4",
     question: "How secure is my uploaded data?",
-    answer:
-      "We prioritize your data security with encryption and strict privacy measures. Your uploaded videos and analysis results are kept confidential and are not shared with third parties.",
+    answer: "We don't save your data. Its all yours.",
   },
   {
     id: "5",
     question: "Can I download the analysis results?",
     answer:
-      "Yes, you can download the processed video, heatMaps, and other analysis results in various formats for offline use.",
+      "Yes, you can download the processed video results in for offline use.",
   },
   {
     id: "6",
     question: "Do you offer team or club-level subscriptions?",
-    answer:
-      "Absolutely! We offer plans tailored for teams and clubs that include additional features like shared access, team performance metrics, and more.",
+    answer: "No it is all free to use",
   },
   {
     id: "7",
@@ -98,14 +98,13 @@ export const faq = [
   {
     id: "8",
     question: "Can I integrate this tool with other platforms?",
-    answer:
-      "Yes, our platform offers API access and integrations with popular tools like video editors and analytics dashboards to enhance your workflow.",
+    answer: "We are working on that concept",
   },
   {
     id: "9",
     question: "What insights can I get from the analysis?",
     answer:
-      "You can obtain detailed insights such as player heatmaps, ball possession data, pass accuracy, and overall team performance metrics to help refine strategies.",
+      "You can obtain detailed insights such as player ball possession data, pass accuracy, and overall team performance metrics to help refine strategies.",
   },
 ];
 
