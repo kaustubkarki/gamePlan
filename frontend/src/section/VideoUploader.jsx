@@ -127,7 +127,7 @@ const VideoUploader = () => {
                       You can share this with anyone who has this link.
                     </DialogDescription>
                   </DialogHeader>
-                  <video
+                  {/* <video
                     name="outputVideo"
                     width={855}
                     height={655}
@@ -140,7 +140,7 @@ const VideoUploader = () => {
                   >
                     <source src={outputVideo} type="video/mp4" />
                     Your browser does not support the video tag.
-                  </video>
+                  </video> */}
                   <div className="flex items-center space-x-2">
                     <div className="grid flex-1 gap-2">
                       <Label htmlFor="link" className="sr-only">
