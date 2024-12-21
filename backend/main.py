@@ -148,7 +148,7 @@ def process_video(input_video_path, output_video_path):
         break
     
     # Save Annotated Video
-    save_video(output_video_frames, output_video_path)
+    save_video(output_video_frames, 'output_videos/output_video.avi')
     print(f"Processed video saved at: {output_video_path}")
     
 def process_video_task(input_video_path, output_video_path):
@@ -168,8 +168,7 @@ async def upload_video(file: UploadFile = File(...), background_tasks: Backgroun
         output_video_path = os.path.join(output_videos_dir, f"processed_{file.filename}")
         background_tasks.add_task(process_video_task, input_video_path, output_video_path)
 
-        if not os.path.exists(output_video_path):
-            raise HTTPException(status_code=500, detail="Failed to process video")
+        
 
         return JSONResponse(
             content={
@@ -196,7 +195,7 @@ async def download_video(video_filename: str):
     if os.path.exists(video_path):
         return StreamingResponse(
             open(video_path, "rb"),
-            media_type="video/mp4",
+            media_type="video/avi",
             headers={"Content-Disposition": f"attachment; filename={video_filename}"},
         )
     else:

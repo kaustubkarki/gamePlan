@@ -123,12 +123,3 @@ class SpeedAndDistance_Estimator:
             output_frames.append(frame)
         return output_frames
 
-
-# Example usage
-# estimator = SpeedAndDistance_Estimator()
-# estimator.add_speed_and_distance_to_tracks(tracks)
-# output_frames = estimator.draw_speed_and_distance(frames, tracks)
-# for frame in output_frames:
-#     cv2.imshow("Frame", frame)
-#     cv2.waitKey(1)
-# cv2.destroyAllWindows()

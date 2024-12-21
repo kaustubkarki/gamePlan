@@ -67,6 +67,7 @@ const VideoUploader = () => {
       );
       setOutputVideo(`${API_URL}${uploadResponse.data.video_url}`);
       console.log("Video uploaded:", uploadResponse.data);
+      console.log(outputVideo);
     } catch (error) {
       console.error("Error uploading video", error);
       alert("Failed to upload the video. Please try again.");
@@ -170,7 +171,7 @@ const VideoUploader = () => {
                         if (outputVideo) {
                           const filename =
                             outputVideo.split("/").pop() ||
-                            "processed_video.mp4";
+                            "processed_test.mp4";
                           const downloadLink = `${API_URL}/download/${filename}`;
 
                           const link = document.createElement("a");
