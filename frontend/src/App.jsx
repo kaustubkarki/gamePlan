@@ -4,6 +4,7 @@ import Features from "./section/Features";
 import Footer from "./section/Footer";
 import Header from "./section/Header";
 import Hero from "./section/Hero";
+import Slider from "./section/Slider";
 import VideoUploader from "./section/VideoUploader";
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <Hero />
       <Features />
       <VideoUploader />
+      <Slider />
       <Faq />
       <Demo />
       <Footer />

@@ -1,0 +1,11 @@
+ultralytics
+supervision
+pandas
+numpy
+torch
+torchvision
+opencv-python
+transformers
+more-itertools
+pickle5
+typing-extensions

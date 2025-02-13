@@ -57,7 +57,7 @@ const Demo = () => {
                   <span className="download_preview-dot left-16 bg-p1/15" />
 
                   <video
-                    src="/demo.mp4"
+                    src="/test.mp4"
                     width={855}
                     height={655}
                     alt="screen"
