@@ -1,30 +1,3 @@
-export const features = [
-  {
-    id: "0",
-    icon: "/images/feature-1.png",
-    caption: "Instant video analysis",
-    title: "Unlock insights in seconds",
-    text: "With our AI-powered video analysis, you can instantly extract key moments from football games, including ball tracking, player movement, and heatmaps. Streamline your review process and gain valuable insights faster than ever.",
-    button: {
-      icon: "/images/magictouch.svg",
-      title: "Watch the demo",
-      to: "demo",
-    },
-  },
-  {
-    id: "1",
-    icon: "/images/feature-2.png",
-    caption: "Accurate & reliable",
-    title: "Precision you can trust",
-    text: "Our advanced machine learning models ensure highly accurate tracking and analysis of every football game. Whether it's a local match or a professional league, rely on our platform to provide the most precise insights every time.",
-    button: {
-      icon: "/images/docs.svg",
-      title: "Any Question?",
-      to: "faq",
-    },
-  },
-];
-
 export const details = [
   {
     id: "0",
@@ -53,13 +26,13 @@ export const faq = [
     id: "0",
     question: "How does the video analysis process work?",
     answer:
-      "Upload your football video, and our AI-powered system will process it to extract player movements, ball tracking. You’ll receive a detailed breakdown of the game in just a few minutes.",
+      "Upload your football video, and our AI-powered system will process it to extract player movements, ball tracking. You’ll receive a video with annotations of the game in just a few minutes.",
   },
   {
     id: "1",
     question: "What types of videos are supported?",
     answer:
-      "We support most common format MP4. If your video is in a different format, you can easily convert it using free tools online.",
+      "We support format MP4. If your video is in a different format, you can easily convert it using free tools online.",
   },
   {
     id: "2",
@@ -93,18 +66,18 @@ export const faq = [
     id: "7",
     question: "How long does it take to analyze a video?",
     answer:
-      "The analysis time depends on the length of the video, but most videos are processed and ready within 10-15 minutes.",
+      "The analysis time depends on the length of the video, but most videos are processed and ready within 5-10 minutes.",
   },
   {
     id: "8",
     question: "Can I integrate this tool with other platforms?",
-    answer: "We are working on that concept",
+    answer: "We are working on that concept...",
   },
   {
     id: "9",
     question: "What insights can I get from the analysis?",
     answer:
-      "You can obtain detailed insights such as player ball possession data, pass accuracy, and overall team performance metrics to help refine strategies.",
+      "You can obtain detailed insights such as team ball possession data, player speed and distance, team separation with camera movement estimation to help refine strategies.",
   },
 ];
 
